@@ -3,62 +3,26 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
-import { ConferenceApp } from './app.component';
+import { Application } from './app.component';
 
-import { AboutPage, PopoverPage } from '../pages/about/about';
-import { AccountPage } from '../pages/account/account';
-import { LoginPage } from '../pages/login/login';
-import { MapPage } from '../pages/map/map';
-import { SchedulePage } from '../pages/schedule/schedule';
-import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
-import { SessionDetailPage } from '../pages/session-detail/session-detail';
-import { SignupPage } from '../pages/signup/signup';
-import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
-import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
-import { TabsPage } from '../pages/tabs/tabs';
-import { TutorialPage } from '../pages/tutorial/tutorial';
+import { HomePage } from '../pages/home/page';
 
-import { ConferenceData } from '../providers/conference-data';
-import { UserData } from '../providers/user-data';
+const COMPONENTS: any = [
+  Application,
+  HomePage
+];
 
+const PROVIDERS: any = [
+  Storage
+];
 
 @NgModule({
-  declarations: [
-    ConferenceApp,
-    AboutPage,
-    AccountPage,
-    LoginPage,
-    MapPage,
-    PopoverPage,
-    SchedulePage,
-    ScheduleFilterPage,
-    SessionDetailPage,
-    SignupPage,
-    SpeakerDetailPage,
-    SpeakerListPage,
-    TabsPage,
-    TutorialPage
-  ],
+  declarations: COMPONENTS,
+  entryComponents: COMPONENTS,
   imports: [
-    IonicModule.forRoot(ConferenceApp)
+    IonicModule.forRoot(Application)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    ConferenceApp,
-    AboutPage,
-    AccountPage,
-    LoginPage,
-    MapPage,
-    PopoverPage,
-    SchedulePage,
-    ScheduleFilterPage,
-    SessionDetailPage,
-    SignupPage,
-    SpeakerDetailPage,
-    SpeakerListPage,
-    TabsPage,
-    TutorialPage
-  ],
-  providers: [ConferenceData, UserData, Storage]
+  providers: PROVIDERS
 })
 export class AppModule {}

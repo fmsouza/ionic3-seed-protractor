@@ -1,6 +1,4 @@
-
-<!-- logged out menu -->
-<ion-menu id="loggedOutMenu" [content]="content">
+<ion-menu [content]="content">
 
   <ion-header>
     <ion-toolbar>
@@ -10,60 +8,15 @@
 
   <ion-content class="outer-content">
 
-    <ion-list>
+    <ion-list no-lines>
       <ion-list-header>
-        Navigate
+        Pages
       </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
+      <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
         <ion-icon item-left [name]="p.icon"></ion-icon>
-        {{p.title}}
+        <span>{{ p.title }}</span>
       </button>
     </ion-list>
-
-    <ion-list>
-      <ion-list-header>
-        Account
-      </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of loggedOutPages" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
-
-</ion-menu>
-
-<!-- logged in menu -->
-<ion-menu id="loggedInMenu" [content]="content">
-
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-content class="outer-content">
-
-    <ion-list>
-      <ion-list-header>
-        Navigate
-      </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of appPages" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
-        {{p.title}}
-      </button>
-    </ion-list>
-
-    <ion-list>
-      <ion-list-header>
-        Account
-      </ion-list-header>
-      <button ion-item menuClose *ngFor="let p of loggedInPages" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
-        {{p.title}}
-      </button>
-    </ion-list>
-
   </ion-content>
 
 </ion-menu>
