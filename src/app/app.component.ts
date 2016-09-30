@@ -18,7 +18,7 @@ export interface MenuItem {
 export class Application {
     // the root nav is a child of the root app component
     // @ViewChild(Nav) gets a reference to the app's root nav
-    @ViewChild(Nav) private nav: Nav;
+    @ViewChild(Nav) public nav: Nav;
 
     public rootPage: any = HomePage;
 
@@ -33,7 +33,6 @@ export class Application {
     }, ];
 
     public constructor(platform: Platform) {
-        super();
         platform.ready().then(() => this.onReady());
     }
 
