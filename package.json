@@ -39,15 +39,7 @@
     "cordova-plugin-wkwebview-engine"
   ],
   "cordovaPlatforms": [
-    {
-      "platform": "android",
-      "version": "",
-      "locator": "android"
-    },
-    {
-      "platform": "ios",
-      "version": "",
-      "locator": "ios"
-    }
+    "android",
+    "ios"
   ]
 }
