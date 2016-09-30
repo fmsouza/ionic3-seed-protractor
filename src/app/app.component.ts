@@ -1,7 +1,8 @@
-import {HomePage} from '../pages/home/page';
 import {Component, ViewChild} from '@angular/core';
 import {Nav, Platform} from 'ionic-angular';
 import {Splashscreen, StatusBar} from 'ionic-native';
+import {DEFAULT_PAGE} from '../components';
+import {HomePage} from '../pages/home/page';
 
 export interface MenuItem {
     title: string;
@@ -20,13 +21,13 @@ export class Application {
     // @ViewChild(Nav) gets a reference to the app's root nav
     @ViewChild(Nav) public nav: Nav;
 
-    public rootPage: any = HomePage;
+    public rootPage: any = DEFAULT_PAGE;
 
     // List of pages that can be navigated to from the left menu
     // the left menu only works after login
     // the login page disables the left menu
     public pages: MenuItem[] = [{
-        title: 'Pages',
+        title: 'Home',
         icon: 'home',
         component: HomePage,
         home: true

@@ -1,16 +1,18 @@
-import {HomePage} from '../pages/home/page';
 import {Application} from './app.component';
 import {NgModule} from '@angular/core';
 import {Storage} from '@ionic/storage';
 import {IonicApp, IonicModule} from 'ionic-angular';
+import {Components} from '../components';
+import Providers from '../providers';
 
 const COMPONENTS: any = [
     Application,
-    HomePage
+    ...Components
 ];
 
 const PROVIDERS: any = [
-    Storage
+    Storage,
+    ...Providers
 ];
 
 @NgModule({
