@@ -1,28 +1,25 @@
-import { NgModule } from '@angular/core';
-
-import { IonicApp, IonicModule } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
-
-import { Application } from './app.component';
-
-import { HomePage } from '../pages/home/page';
+import {HomePage} from '../pages/home/page';
+import {Application} from './app.component';
+import {NgModule} from '@angular/core';
+import {Storage} from '@ionic/storage';
+import {IonicApp, IonicModule} from 'ionic-angular';
 
 const COMPONENTS: any = [
-  Application,
-  HomePage
+    Application,
+    HomePage
 ];
 
 const PROVIDERS: any = [
-  Storage
+    Storage
 ];
 
 @NgModule({
-  declarations: COMPONENTS,
-  entryComponents: COMPONENTS,
-  imports: [
-    IonicModule.forRoot(Application)
-  ],
-  bootstrap: [IonicApp],
-  providers: PROVIDERS
+    declarations: COMPONENTS,
+    entryComponents: COMPONENTS,
+    imports: [
+        IonicModule.forRoot(Application)
+    ],
+    bootstrap: [IonicApp],
+    providers: PROVIDERS
 })
 export class AppModule {}
