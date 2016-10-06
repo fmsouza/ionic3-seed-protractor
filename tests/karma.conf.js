@@ -53,6 +53,7 @@ module.exports = function(config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: false,
 
+    reportSlowerThan: 100,
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
