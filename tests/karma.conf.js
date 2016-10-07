@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: `${__dirname}/../src`,
+    basePath: `${__dirname}/..`,
 
 
     // frameworks to use
@@ -15,19 +15,18 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      { pattern: "**/*.spec.ts" },
+      { pattern: "src/**/*.ts" },
     ],
 
 
     // list of files to exclude
-    exclude: [
-    ],
+    exclude: [],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      "**/*.spec.ts": ["karma-typescript"]
+      "src/**/*.ts": ["karma-typescript"]
     },
 
 

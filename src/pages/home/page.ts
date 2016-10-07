@@ -17,8 +17,11 @@ import {Component} from '@angular/core';
         </ion-header>
 
         <ion-content padding class="home">
-            <h2>Hello world!</h2>
+            <h2>{{ content }}</h2>
         </ion-content>
         `,
 })
-export class HomePage {}
+export class HomePage {
+
+    public content: string = 'Hello world!';
+}

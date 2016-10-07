@@ -1,9 +1,17 @@
-declare var describe, it, expect;
+import { HomePage } from './page';
+
+declare var describe, beforeEach, it, expect;
 
 describe("HomePage", () => {
 
-    it("should say 'Hello world!'", () => {
+    let page: HomePage;
 
-        expect("Hello world!").toEqual("Hello world!");
+    beforeEach(() => {
+        page = new HomePage();
+    });
+
+    it("should contain 'Hello world!' in 'content' property", () => {
+
+        expect(page.content).toEqual("Hello world!");
     });
 });
