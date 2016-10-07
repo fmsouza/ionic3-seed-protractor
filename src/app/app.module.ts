@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {Storage} from '@ionic/storage';
 import {IonicApp, IonicModule} from 'ionic-angular';
 import {Components} from '../components';
-import Providers from '../providers';
+import {Providers} from '../providers';
 
 const COMPONENTS: any = [
     Application,
