@@ -11,7 +11,6 @@ describe("HomePage", () => {
     });
 
     it("should contain 'Hello world!' in 'content' property", () => {
-
         expect(page.content).toEqual("Hello world!");
     });
 });
