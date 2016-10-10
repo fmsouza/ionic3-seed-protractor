@@ -3,9 +3,7 @@ declare var describe, beforeEach, it, expect;
 
 describe('HomePage', () => {
 
-  beforeEach(() => {
-    browser.get('');
-  });
+  beforeEach(() => browser.get(''));
 
   it('should have {nav}', () => {
     expect(element(by.css('ion-navbar')).isPresent()).toEqual(true);
