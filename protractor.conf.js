@@ -9,15 +9,19 @@ exports.config = {
   specs: [
     './src/**/*.e2e.ts'
   ],
+  exclude: [],
   capabilities: {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'http://localhost:8100/',
   framework: 'jasmine2',
   jasmineNodeOpts: {
+    showTiming: true,
     showColors: true,
-    defaultTimeoutInterval: 30000,
+    isVerbose: false,
+    includeStackTrace: false,
+    defaultTimeoutInterval: 400000,
     print: function() {}
   },
   useAllAngular2AppRoots: true,
