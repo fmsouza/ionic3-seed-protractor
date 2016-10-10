@@ -19,7 +19,10 @@
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "start": "ionic serve",
+    "android": "ionic run android --livereload",
+    "ios": "ionic run ios --livereload"
   },
   "dependencies": {
     "@ionic/storage": "^1.1.2",
