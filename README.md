@@ -27,14 +27,16 @@ npm start         # deploys the the browser
 ```
 
 ## Run in Android
-```
+```bash
 # make sure the Android device is connected and available to ADB
+
 npm run android   # deploys the app to an Android device
 ```
 
 ## Run in iOS
-```
+```bash
 # make sure the iOS device is connected
+
 npm run ios       # deploys the app to an iOS device
 ```
 
@@ -44,7 +46,7 @@ npm test          # run unit tests
 ```
 
 ## Run E2E
-```
+```bash
 # e2e (aka. end-to-end, integration) - In two different shell windows
 # Make sure you don't have a global instance of Protractor
 
