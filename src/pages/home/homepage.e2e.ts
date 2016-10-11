@@ -10,7 +10,7 @@ describe('HomePage', () => {
   });
 
   it('should have correct nav text for Home', () => {
-    expect(element(by.css('ion-navbar ion-title')).getText()).toContain('Ionic seed');
+    expect(element(by.css('ion-navbar ion-title')).getText()).toContain('Ionic');
   });
   
 });

@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import strings from '../../strings';
 
 /**
  * HomePage class is the Home view controller
@@ -12,16 +13,18 @@ import {Component} from '@angular/core';
                 <button ion-button menuToggle>
                     <ion-icon name="menu"></ion-icon>
                 </button>
-                <ion-title>Ionic seed</ion-title>
+                <ion-title>{{ Text.PAGE_HOME_TITLE }}</ion-title>
             </ion-navbar>
         </ion-header>
 
         <ion-content padding class="home">
-            <h2>{{ content }}</h2>
+            <h2>{{ Text.PAGE_HOME_CONTENT }}</h2>
         </ion-content>
         `,
 })
 export class HomePage {
 
-    public content: string = 'Hello world!';
+    public get Text(): any {
+        return strings;
+    }
 }

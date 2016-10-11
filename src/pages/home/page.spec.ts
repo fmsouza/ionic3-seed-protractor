@@ -6,11 +6,9 @@ describe("HomePage", () => {
 
     let page: HomePage;
 
-    beforeEach(() => {
-        page = new HomePage();
-    });
+    beforeEach(() => page = new HomePage());
 
     it("should contain 'Hello world!' in 'content' property", () => {
-        expect(page.content).toEqual("Hello world!");
+        expect(page.Text.PAGE_HOME_CONTENT).toEqual("Hello world!");
     });
 });

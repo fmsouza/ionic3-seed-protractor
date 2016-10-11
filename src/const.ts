@@ -1,0 +1,1 @@
+export const LANG_DEFAULT: string = 'en-US';
