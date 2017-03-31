@@ -1,6 +1,6 @@
 # Ionic 2 seed
 
-This is a seed of Ionic 2 with TypeScript + Karma + Protractor.
+This is a seed of Ionic 2 with TypeScript + Karma
 
 ## Table of Contents
  - [Getting Started](#getting-started)
@@ -43,15 +43,6 @@ npm run ios       # deploys the app to an iOS device
 ## Run Unit Tests
 ```bash
 npm test          # run unit tests
-```
-
-## Run E2E
-```bash
-# e2e (aka. end-to-end, integration) - In two different shell windows
-# Make sure you don't have a global instance of Protractor
-
-npm start
-npm run e2e
 ```
 
 ## Contribute
