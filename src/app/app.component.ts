@@ -1,8 +1,8 @@
-import {Component, ViewChild} from '@angular/core';
-import {Nav, Platform} from 'ionic-angular';
-import {SplashScreen} from '@ionic-native/splash-screen';
-import {StatusBar} from '@ionic-native/status-bar';
-import {DEFAULT_PAGE, DrawerLinks, MenuItem} from '../components';
+import { Component, ViewChild } from '@angular/core';
+import { Nav, Platform } from 'ionic-angular';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+import { DEFAULT_PAGE, DrawerLinks, MenuItem } from '../components';
 import strings from '../strings/index';
 
 @Component({
