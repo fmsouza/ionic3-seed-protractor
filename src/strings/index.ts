@@ -1,4 +1,4 @@
-import {LANG_DEFAULT} from '../const';
+import { LANG_DEFAULT } from '../const';
 import * as pt_BR from './pt_BR';
 import * as en_US from './en_US';
 

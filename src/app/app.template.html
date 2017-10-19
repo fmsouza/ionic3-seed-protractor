@@ -1,25 +1,29 @@
-<ion-menu [content]="content">
+<ion-split-pane>
 
-    <ion-header>
-        <ion-toolbar>
-            <ion-title>{{ Text.MENU_TITLE }}</ion-title>
-        </ion-toolbar>
-    </ion-header>
+  <ion-menu [content]="content">
 
-    <ion-content class="outer-content">
+      <ion-header>
+          <ion-toolbar>
+              <ion-title>{{ Text.MENU_TITLE }}</ion-title>
+          </ion-toolbar>
+      </ion-header>
 
-        <ion-list no-lines>
-            <ion-list-header>
-                {{ Text.MENU_HEADER_PAGES }}
-            </ion-list-header>
-            <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
-        <ion-icon item-left [name]="p.icon"></ion-icon>
-        <span>{{ p.title }}</span>
-      </button>
-        </ion-list>
-    </ion-content>
+      <ion-content class="outer-content">
 
-</ion-menu>
+          <ion-list no-lines>
+              <ion-list-header>
+                  {{ Text.MENU_HEADER_PAGES }}
+              </ion-list-header>
+              <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon item-left [name]="p.icon"></ion-icon>
+          <span>{{ p.title }}</span>
+        </button>
+          </ion-list>
+      </ion-content>
 
-<!-- main navigation -->
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+  </ion-menu>
+
+  <!-- main navigation -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>
+
+</ion-split-pane>

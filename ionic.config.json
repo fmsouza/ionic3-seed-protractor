@@ -1,6 +1,8 @@
 {
-  "name": "ionic2-seed",
+  "name": "ionic-seed",
   "app_id": "",
-  "typescript": true,
-  "v2": true
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

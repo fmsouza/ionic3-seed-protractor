@@ -1,4 +1,4 @@
-import {HomePage} from './pages/home/page';
+import * as Pages from './pages';
 import strings from './strings';
 
 export interface MenuItem {
@@ -10,12 +10,22 @@ export interface MenuItem {
     home?: boolean;
 }
 
-export const DEFAULT_PAGE: any = HomePage;
+export interface DeepLink {
+    name: string;
+    segment: string;
+    component: any;
+}
 
-export const Components: any = [
-    HomePage
+export const DEFAULT_PAGE: any = Pages.HomePage;
+
+export const PAGES: any = [
+    Pages.HomePage
 ];
 
-export const DrawerLinks: MenuItem[] = [
-    { title: strings.MENU_OPTION_HOME, icon: 'home', component: HomePage, home: true },
+export const DRAWER_LINKS: MenuItem[] = [
+    { title: strings.MENU_OPTION_HOME, icon: 'home', component: Pages.HomePage, home: true },
+];
+
+export const DEEP_LINKS: DeepLink[] = [
+  { name: 'HomePage', segment: 'page-home', component: Pages.HomePage }
 ];

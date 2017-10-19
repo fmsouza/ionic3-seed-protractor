@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-import { DEFAULT_PAGE, DrawerLinks, MenuItem } from '../components';
+import { DEFAULT_PAGE, DRAWER_LINKS, MenuItem } from '../components';
 import strings from '../strings/index';
 
 @Component({
@@ -22,7 +22,7 @@ export class Application {
     // List of pages that can be navigated to from the left menu
     // the left menu only works after login
     // the login page disables the left menu
-    public pages: MenuItem[] = DrawerLinks;
+    public pages: MenuItem[] = DRAWER_LINKS;
 
     public constructor(platform: Platform, private splashscreen: SplashScreen, private statusbar: StatusBar) {
         platform.ready().then(() => this.onReady());
@@ -43,7 +43,7 @@ export class Application {
     public openPage(page: MenuItem): void {
         if (page.component) {
             if (!page.home) this.nav.push(page.component);
-            else this.rootPage = page.component;
+            else this.nav.setRoot(page.component);
         } else if (page.link) window.open(page.link, '_system');
         else if (page.action) page.action();
     }

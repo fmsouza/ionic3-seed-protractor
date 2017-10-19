@@ -1,20 +1,27 @@
-import { Application } from './app.component';
-import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-import { IonicStorageModule } from '@ionic/storage';
+import { NgModule, ErrorHandler } from '@angular/core';
+
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { Components } from '../components';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { IonicStorageModule } from '@ionic/storage';
+
+import { Application } from './app.component';
+import { PAGES, DEEP_LINKS as links } from '../components';
 import { Providers } from '../providers';
 
 const COMPONENTS: any = [
     Application,
-    ...Components
+    ...PAGES
 ];
 
-const PROVIDERS: any = [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Storage,
+const providers: any = [
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    StatusBar,
+    SplashScreen,
     ...Providers
 ];
 
@@ -24,10 +31,10 @@ const PROVIDERS: any = [
     imports: [
         BrowserModule,
         HttpModule,
-        IonicStorageModule.forRoot(),
-        IonicModule.forRoot(Application)
+        IonicModule.forRoot(Application, {}, { links }),
+        IonicStorageModule.forRoot()
     ],
     bootstrap: [IonicApp],
-    providers: PROVIDERS
+    providers
 })
 export class AppModule {}
