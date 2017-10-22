@@ -1,6 +1,6 @@
-# Ionic 2 seed
+# Ionic 3 seed
 
-This is a seed of Ionic 2 with TypeScript + Karma
+This is a seed of Ionic 3 with TypeScript + Karma
 
 ## Table of Contents
  - [Getting Started](#getting-started)
@@ -18,7 +18,7 @@ This is a seed of Ionic 2 with TypeScript + Karma
 * Run `npm start` in a terminal from the project root.
 * Profit.
 
-**Note:** Is your build slow? Update `npm` to 3.x: `npm install -g npm`.
+**Note:** Is your build slow? Update  `npm` to 5.x: `npm install -g npm`.
 
 ## Run in browser
 ```bash
