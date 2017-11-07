@@ -8,6 +8,7 @@ This is a seed of Ionic 3 with TypeScript + Karma
  - [Run in Android](#run-in-android)
  - [Run in iOS](#run-in-ios)
  - [Run Unit Tests](#run-unit-tests)
+ - [Run E2E Tests](#run-e2e-tests)
  - [Contribute](#contribute)
 
 ## Getting Started
@@ -18,8 +19,6 @@ This is a seed of Ionic 3 with TypeScript + Karma
 * Run `npm start` in a terminal from the project root.
 * Profit.
 
-**Note:** Is your build slow? Update  `npm` to 5.x: `npm install -g npm`.
-
 ## Run in browser
 ```bash
 npm start         # deploys the the browser
@@ -27,7 +26,7 @@ npm start         # deploys the the browser
 
 ## Run in Android
 ```bash
-# make sure the Android device is connected and available to ADB
+# make sure the Android device/emulator is connected and available to ADB
 
 npm run android   # deploys the app to an Android device or emulator
 ```
@@ -44,5 +43,11 @@ npm run ios       # deploys the app to an iOS device or simulator
 npm test          # run unit tests
 ```
 
+## Run E2E Tests
+```bash
+npm run appium    # run start appium server
+npm run e2e       # in other terminal, run the e2e tests on the device
+```
+
 ## Contribute
-Issues and PRs are welcome, see the [issues list](https://github.com/fmsouza/ionic2-seed/issues).
+Issues and PRs are welcome, see the [issues list](https://github.com/fmsouza/ionic3-seed/issues).
