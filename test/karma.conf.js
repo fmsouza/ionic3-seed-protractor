@@ -1,5 +1,3 @@
-var webpackConfig = require('./webpack.test.js');
-
 module.exports = function(config) {
   var _config = {
     basePath: '../',
@@ -28,7 +26,7 @@ module.exports = function(config) {
       './test-config/karma-test-shim.js': ['webpack', 'sourcemap']
     },
 
-    webpack: webpackConfig,
+    webpack: require('./webpack.test.js'),
 
     webpackMiddleware: {
       stats: 'errors-only'
