@@ -20,7 +20,8 @@
     "test-coverage": "karma start ./test/karma.conf.js --coverage",
     "e2e": "npm run e2e-update && npm run e2e-test",
     "e2e-test": "protractor ./test/protractor.conf.js",
-    "e2e-update": "webdriver-manager update --standalone false --gecko false"
+    "e2e-update": "webdriver-manager update --standalone false --gecko false",
+    "appium": "appium"
   },
   "dependencies": {
     "@angular/common": "4.4.4",
@@ -38,12 +39,14 @@
     "@ionic/storage": "2.0.1",
     "cordova-android": "6.3.0",
     "cordova-ios": "4.5.2",
-    "cordova-plugin-statusbar": "2.2.3",
+    "cordova-plugin-device": "1.1.6",
     "cordova-plugin-ionic-keyboard": "2.0.4",
-    "cordova-plugin-splashscreen": "4.0.3",
-    "cordova-plugin-whitelist": "1.3.2",
     "cordova-plugin-ionic-webview": "1.1.15",
+    "cordova-plugin-splashscreen": "4.0.3",
+    "cordova-plugin-statusbar": "2.2.3",
+    "cordova-plugin-whitelist": "1.3.2",
     "ionic-angular": "3.8.0",
+    "ionic-plugin-keyboard": "2.2.1",
     "ionicons": "3.0.0",
     "rxjs": "5.4.3",
     "sw-toolbox": "3.6.0",
@@ -55,6 +58,7 @@
     "@types/jasmine": "2.6.0",
     "@types/node": "8.0.45",
     "angular2-template-loader": "0.6.2",
+    "appium": "1.7.1",
     "html-loader": "0.5.1",
     "istanbul-instrumenter-loader": "3.0.0",
     "jasmine": "2.8.0",
@@ -70,7 +74,9 @@
     "protractor": "5.2.0",
     "ts-loader": "3.0.3",
     "ts-node": "3.3.0",
-    "typescript": "2.5.3"
+    "typescript": "2.5.3",
+    "wd": "1.4.1",
+    "wd-bridge": "0.0.2"
   },
   "config": {
     "ionic_aot_write_to_disk": true
@@ -85,7 +91,9 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-ionic-webview": {}
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-device": {},
+      "ionic-plugin-keyboard": {}
     }
   }
 }

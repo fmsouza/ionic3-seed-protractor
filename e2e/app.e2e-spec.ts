@@ -8,13 +8,11 @@ describe('App', () => {
   });
 
   describe('default screen', () => {
-    beforeEach(() => {
-      page.navigateTo('/');
-    });
+    //beforeEach(() => page.navigateTo('/'));
 
     it('should have a title saying Home', () => {
       page.getTitle().then(title => {
-        expect(title).toEqual('Home');
+        expect(title).toEqual('Ionic');
       });
     });
   })
