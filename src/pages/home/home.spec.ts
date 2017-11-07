@@ -1,11 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { IonicModule, Platform, NavController } from 'ionic-angular/index';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+import { IonicModule, NavController } from 'ionic-angular/index';
 import { HomePage } from './index';
-import { PlatformMock, StatusBarMock, SplashScreenMock } from '../../../test/mocks-ionic';
 
 describe('HomePage', () => {
   let de: DebugElement;
@@ -20,9 +17,6 @@ describe('HomePage', () => {
       ],
       providers: [
         NavController,
-        { provide: Platform, useClass: PlatformMock},
-        { provide: StatusBar, useClass: StatusBarMock },
-        { provide: SplashScreen, useClass: SplashScreenMock },
       ]
     });
   }));
