@@ -4,6 +4,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 
+import { AppVersion } from '@ionic-native/app-version';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -20,6 +21,7 @@ const COMPONENTS: any = [
 
 const providers: any = [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
+    AppVersion,
     StatusBar,
     SplashScreen,
     ...Providers
