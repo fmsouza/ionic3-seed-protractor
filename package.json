@@ -75,6 +75,7 @@
     "karma-webpack": "2.0.9",
     "null-loader": "0.1.1",
     "protractor": "5.2.2",
+    "selenium-server-standalone-jar": "3.8.1",
     "ts-loader": "3.2.0",
     "ts-node": "4.1.0",
     "typescript": "2.6.2",

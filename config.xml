@@ -41,8 +41,6 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-    <engine name="android" spec="6.3.0" />
-    <engine name="ios" spec="4.5.2" />
     <plugin name="cordova-plugin-statusbar" spec="2.2.3" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.4" />
     <plugin name="cordova-plugin-splashscreen" spec="4.0.3" />
@@ -50,4 +48,6 @@
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.15" />
     <plugin name="cordova-plugin-device" spec="1.1.6" />
     <plugin name="cordova-plugin-app-version" spec="0.1.9" />
+    <engine name="android" spec="7.0.0" />
+    <engine name="ios" spec="4.5.4" />
 </widget>

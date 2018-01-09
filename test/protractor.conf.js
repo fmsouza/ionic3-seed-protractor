@@ -1,9 +1,12 @@
+const jar = require('selenium-server-standalone-jar');
+
 exports.config = {
   /*
   * normally protractor runs tests on localhost:4444, but we want protractor to connect to appium
   * which runs on localhost:4723
   */
-  seleniumAddress: 'http://localhost:4723/wd/hub',
+  seleniumAddress: 'http://127.0.0.1:4723/wd/hub',
+  seleniumServerJar: jar.path,
 
   specs: ['../src/**/*.e2e.ts'],
 

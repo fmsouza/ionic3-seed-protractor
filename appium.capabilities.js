@@ -8,10 +8,11 @@
   * app: the location of the apk (must be absolute)
   */
 module.exports = {
-    browserName: '',
-    autoWebview: true,
-    platformName: 'android',
-    platformVersion: '7.0',
-    deviceName: 'ce031713733918ed0c',
-    app: ''
+  browserName: '',
+  autoWebview: true,
+  isHeadless: false,
+  automationName: 'selendroid',
+  platformName: 'android',
+  deviceName: 'emulator-5554',
+  app: ''
 };
